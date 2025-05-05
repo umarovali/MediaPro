@@ -1,0 +1,13 @@
+.problems {
+    padding-top: 48px;
+    padding-bottom: 66px;
+
+    .problems_wrapper {
+        margin-top: 55px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 60px;
+    }
+}
+
+@import "./problems_item";

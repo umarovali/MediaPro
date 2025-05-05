@@ -1,0 +1,57 @@
+.problems_item {
+    background: $white;
+    padding: 27px;
+    border-radius: 30px;
+    box-shadow: 0px 4px 20px 0px #0000001A;
+    cursor: pointer;
+    transition: 0.1s linear;
+
+    &:hover {
+        transform: translateY(-10px);
+        box-shadow: 0px 4px 35px 0px #0000001A;
+    }
+
+    .problems_question {
+        width: 50px;
+        height: 50px;
+        background: $green;
+        color: $white;
+        font-family: $racing;
+        font-weight: 400;
+        font-size: 40px;
+        line-height: 64px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        box-shadow: 0px 4px 20px 0px #0000001A;
+    }
+
+    .problems_title {
+        padding-top: 20px;
+        color: $blue_dark;
+        font-family: $poppins;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    .problems_suptitle {
+        padding-top: 40px;
+        color: $green;
+        font-family: $poppins;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    .problems_description {
+        padding-top: 11px;
+        color: #00000080;
+        font-family: $poppins;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 25px;
+    }
+}

@@ -1,0 +1,93 @@
+.about {
+
+    .about_content {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 205px;
+        gap: 50px;
+        margin-top: 25px;
+
+        .about_content_item {
+            padding: 20px 30px;
+            background: $white;
+            border-radius: 12px;
+            box-shadow: 0px 4px 20px 0px #0000001A;
+            position: relative;
+            cursor: pointer;
+
+            .about_content_item_title {
+                width: 400px;
+                color: $dark;
+                font-family: $poppins;
+                font-weight: 600;
+                font-size: 25px;
+                line-height: 120%;
+
+                span {
+                    color: $green;
+                }
+            }
+
+            .doteds {
+                display: flex;
+                align-items: center;
+                gap: 7px;
+                position: absolute;
+                top: 25px;
+                right: 25px;
+
+                li {
+                    max-width: 10px;
+                    max-height: 10px;
+                    min-width: 10px;
+                    min-height: 10px;
+                    background: $green;
+                    border-radius: 50%;
+                }
+            }
+
+            .about_content_item_text_one {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 15px;
+                margin-top: 30px;
+            }
+
+            .about_content_item_text_two {
+                display: flex;
+                display: grid;
+                grid-template-columns: repeat(1, 1fr);
+                gap: 15px;
+                margin-top: 50px;
+            }
+
+            .about_content_item_text_one,
+            .about_content_item_text_two {
+
+
+                li {
+                    color: $dark;
+                    font-family: $poppins;
+                    font-weight: 600;
+                    font-size: 20px;
+                    line-height: 100%;
+
+                    span {
+                        font-weight: 500;
+                    }
+                }
+            }
+        }
+    }
+
+
+
+    .about_wrapper {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 60px;
+        margin-top: 42px;
+    }
+}
+
+@import "./about_item";
