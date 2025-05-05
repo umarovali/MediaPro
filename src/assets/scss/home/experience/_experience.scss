@@ -1,0 +1,23 @@
+.experience {
+    width: 100%;
+    height: 300px;
+    background: $bg_gray;
+
+    .experience_bg {
+        width: 100%;
+        height: 230px;
+        background: $white;
+        display: flex;
+        align-items: center;
+    }
+
+    .experience_list {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 60px
+    }
+
+
+}
+
+@import "./_experience_item";

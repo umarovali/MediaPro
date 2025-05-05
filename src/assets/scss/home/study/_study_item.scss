@@ -1,0 +1,51 @@
+.study_item {
+    padding: 25px;
+    background: $white;
+    border-radius: 12px;
+    box-shadow: 0px 4px 20px 0px #0000001A;
+    cursor: pointer;
+    transition: 0.1s linear;
+
+    &:hover {
+        transform: translateY(-10px);
+        box-shadow: 0px 4px 35px 0px #0000001A;
+    }
+
+    .study_question {
+        width: 50px;
+        height: 50px;
+        background: $green;
+        color: $white;
+        font-family: $racing;
+        font-weight: 400;
+        font-size: 40px;
+        line-height: 64px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        box-shadow: 0px 4px 20px 0px #0000001A;
+    }
+
+    .study_title {
+        padding-top: 22px;
+        color: $green;
+        font-family: $poppins;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 25px;
+    }
+
+    .study_suptitle {
+        padding-top: 10px;
+        color: $dark;
+        font-family: $poppins;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 25px;
+        letter-spacing: 0px;
+
+    }
+
+}

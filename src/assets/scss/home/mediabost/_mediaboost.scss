@@ -1,0 +1,12 @@
+.mediaboost {
+    padding: 54px 0px;
+
+    .mediaboost_list {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 27px;
+        margin-top: 35px;
+    }
+}
+
+@import "./mediaboost_item";

@@ -1,0 +1,12 @@
+.study {
+    padding-bottom: 54px;
+
+    .study_list {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 40px;
+        margin-top: 34px;
+    }
+}
+
+@import "./study_item";

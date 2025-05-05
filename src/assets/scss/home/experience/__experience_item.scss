@@ -1,0 +1,26 @@
+.experience_item {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+
+    .experience_title {
+        color: $dark;
+        font-family: $poppins;
+        font-weight: 700;
+        font-size: 55px;
+        line-height: 100%;
+    }
+
+    .experience_suptitle {
+        color: $dark;
+        font-family: $poppins;
+        font-weight: 500;
+        font-size: 22px;
+        line-height: 120%;
+
+        span {
+            color: $green;
+            font-weight: 600;
+        }
+    }
+}
