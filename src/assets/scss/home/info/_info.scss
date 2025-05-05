@@ -1,0 +1,21 @@
+.info {
+    width: 100%;
+    height: auto;
+    padding: 40px 0px;
+    background: #FAFFFB;
+    margin-bottom: 76px;
+
+    .info_wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .info_line {
+        width: 0px;
+        height: 250px;
+        border-left: 1px solid #0000004D;
+    }
+}
+
+@import "./info_item";
