@@ -2,6 +2,7 @@ import './App.css'
 import Header from './Components/Header/Header'
 import About from './Home/About/About'
 import Experience from './Home/Experience/Experience'
+import Format from './Home/Format/Format'
 import Hero from './Home/Hero/Hero'
 import Infos from './Home/Info/Info'
 import MediaBoost from './Home/MediaBoost/MediaBoost'
@@ -21,6 +22,7 @@ function App() {
         <Problems />
         <Study />
         <Infos />
+        <Format />
       </main>
     </>
   )

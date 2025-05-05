@@ -1,0 +1,25 @@
+.format {
+    padding-bottom: 72px;
+
+    .format_wrapper {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 30px;
+    }
+
+    .format_list {
+        display: grid;
+        grid-template-columns: repeat(2, 300px);
+        column-gap: 24px;
+
+        .format_item:nth-child(even) {
+            margin-top: 24px;
+        }
+
+        .format_item:nth-child(odd) {
+            margin-bottom: 24px;
+        }
+    }
+}
+
+@import "./format_item";
