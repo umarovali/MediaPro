@@ -1,0 +1,85 @@
+.modul_item {
+    padding: 15px;
+    background: $white;
+    border-radius: 18px;
+    box-shadow: 0px 4px 20px 0px #0000001A;
+    cursor: pointer;
+    transition: 0.1s linear;
+    position: relative;
+
+    &:hover {
+        transform: translateY(-10px);
+        box-shadow: 0px 4px 35px 0px #0000001A;
+    }
+
+    .modul_doteds {
+        display: flex;
+        align-items: center;
+        gap: 7px;
+        position: absolute;
+        top: 25px;
+        right: 25px;
+
+        li {
+            max-width: 10px;
+            max-height: 10px;
+            min-width: 10px;
+            min-height: 10px;
+            background: $green;
+            border-radius: 50%;
+        }
+    }
+
+    .modul_number {
+        width: 50px;
+        height: 50px;
+        background: $green;
+        color: $white;
+        font-family: $racing;
+        font-weight: 400;
+        font-size: 40px;
+        line-height: 64px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        box-shadow: 0px 4px 20px 0px #0000001A;
+    }
+
+    .modul_text {
+        padding-top: 17px;
+        color: $blue_dark;
+        font-family: $poppins;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+    .modul_title {
+        padding-top: 5px;
+        height: 56px;
+        color: $blue_dark;
+        font-family: $poppins;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 24px;
+
+        span {
+            color: $green;
+        }
+    }
+
+    .modul_suptitle {
+        padding-top: 3px;
+        color: $gray;
+        font-family: $poppins;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+
+        span {
+            color: $green;
+        }
+    }
+}

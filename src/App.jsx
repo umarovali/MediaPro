@@ -6,6 +6,7 @@ import Format from './Home/Format/Format'
 import Hero from './Home/Hero/Hero'
 import Infos from './Home/Info/Info'
 import MediaBoost from './Home/MediaBoost/MediaBoost'
+import Modul from './Home/Modul/Modul'
 import Problems from './Home/Problems/Problems'
 import Study from './Home/Study/Study'
 
@@ -23,6 +24,7 @@ function App() {
         <Study />
         <Infos />
         <Format />
+        <Modul />
       </main>
     </>
   )

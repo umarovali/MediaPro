@@ -1,0 +1,11 @@
+.modul {
+    margin-bottom: 70px;
+    .modul_wrapper {
+        margin-top: 36px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px
+    }
+}
+
+@import "./modul_item";
