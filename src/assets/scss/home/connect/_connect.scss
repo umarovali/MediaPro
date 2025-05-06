@@ -54,6 +54,7 @@
             }
 
             label {
+                cursor: pointer;
                 font-family: $work;
                 font-weight: 300;
                 font-size: 14px;
@@ -98,6 +99,15 @@
                 background: $green;
                 color: $white;
             }
+        }
+    }
+}
+
+
+@media (max-width: 1000px) {
+    .connect {
+        .connect_title {
+            font-size: 26px;
         }
     }
 }

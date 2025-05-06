@@ -52,3 +52,35 @@
         height: 14px;
     }
 }
+
+
+@media (max-width: 1150px) {
+    .swiper {
+        .swiper-slide {
+            video {
+                height: 500px;
+            }
+        }
+    }
+}
+
+
+@media (max-width: 1000px) {
+    .swiper {
+        .swiper-slide {
+            video {
+                height: 400px;
+            }
+        }
+    }
+}
+
+@media (max-width: 800px) {
+    .swiper {
+        .swiper-slide {
+            video {
+                height: 500px;
+            }
+        }
+    }
+}

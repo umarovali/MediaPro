@@ -11,3 +11,11 @@
 }
 
 @import "./problems_item";
+
+@media (max-width: 1150px) {
+    .problems {
+        .problems_wrapper {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+}

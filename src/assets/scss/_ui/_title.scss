@@ -9,3 +9,9 @@
         color: $green;
     }
 }
+
+@media (max-width: 1000px) {
+    .title {
+        font-size: 28px;
+    }
+}

@@ -11,3 +11,10 @@
         color: $green;
     }
 }
+
+@media (max-width: 1000px) {
+    .suptitle {
+        font-size: 20px;
+        width: 80%;
+    }
+}

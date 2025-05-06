@@ -21,3 +21,26 @@
 }
 
 @import "./_experience_item";
+
+
+@media (max-width: 1000px)  {
+    .experience {
+        height: 400px;
+        .experience_bg {
+            height: auto;
+            padding: 30px 0px;
+        }
+        .experience_list {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 50px;
+            flex-wrap: wrap;
+    
+            li {
+                width: 300px;
+                text-align: center;
+            }
+        }
+    }
+}

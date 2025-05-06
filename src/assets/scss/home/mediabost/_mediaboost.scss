@@ -10,3 +10,12 @@
 }
 
 @import "./mediaboost_item";
+
+
+@media (max-width: 1000px) {
+    .mediaboost {
+        .mediaboost_list {
+            grid-template-columns: repeat(2,1fr);
+        }
+    }
+}

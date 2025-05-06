@@ -11,12 +11,12 @@ export default function Connect() {
 
                     <form className="connect_form">
                         <div className="connect_inputs">
-                            <label>Ismingis*</label>
-                            <input type="text" />
+                            <label for="name">Ismingis*</label>
+                            <input type="text" id="name" />
                         </div>
                         <div className="connect_inputs">
-                            <label>Telefon raqamingiz*</label>
-                            <input type="text" />
+                            <label for="num">Telefon raqamingiz*</label>
+                            <input type="text" id="num" />
                         </div>
 
                         <button className="connect_btns">Royhatdan otish!</button>

@@ -40,13 +40,28 @@ export default function VideoSwiper() {
 
     return (
         <Swiper
-            slidesPerView={4}
-            spaceBetween={30}
-            loop={true}
-            pagination={true}
-            modules={[Pagination]}
-            className="mySwiper"
-        >
+        slidesPerView={4}
+        spaceBetween={30}
+        loop={true}
+        pagination={{ clickable: true }}
+        modules={[Pagination]}
+        className="mySwiper"
+        breakpoints={{
+          0: {
+            slidesPerView: 1,
+          },
+          640: {
+            slidesPerView: 2,
+          },
+          800: {
+            slidesPerView: 3,
+          },
+          1150: {
+            slidesPerView: 4,
+          },
+        }}
+      >
+      
             {videos.map((videoUrl, index) => (
                 <SwiperSlide key={index} style={{ position: "relative" }}>
                     <div className='video_block'>
