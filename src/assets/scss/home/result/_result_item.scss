@@ -1,0 +1,58 @@
+.result_item {
+    min-width: 340px;
+    padding: 16px 12px;
+    background: $white;
+    border-radius: 10px 20px 20px 10px;
+    box-shadow: 0px 4px 20px 0px #0000001A;
+    border-left: 10px $green solid;
+    cursor: pointer;
+
+    .rusult_text {
+        color: $blue_dark;
+        font-family: $poppins;
+        font-weight: 500;
+        font-size: 17px;
+        line-height: 120%;
+
+        span {
+            color: $green;
+        }
+    }
+
+    .result_content {
+        margin-top: 10px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+        img {
+            width: 50px;
+            height: 50px;
+            border: 1px solid $green;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+
+        .result_name_work {
+            display: flex;
+            flex-direction: column;
+            gap: 7px;
+        }
+
+        .result_name {
+            color: $dark;
+            font-family: $poppins;
+            font-weight: 500;
+            line-height: 100%;
+            font-size: 18px;
+        }
+
+        .result_work {
+            color: $gray;
+            font-family: $poppins;
+            font-weight: 400;
+            line-height: 100%;
+            font-size: 12px;
+        }
+    }
+}

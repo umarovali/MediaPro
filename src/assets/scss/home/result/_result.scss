@@ -1,0 +1,17 @@
+.result {
+    margin-bottom: 100px;
+
+    .result_wrapper {
+        padding: 20px;
+        overflow-x: scroll;
+        display: flex;
+        gap: 30px;
+        scroll-behavior: smooth;
+        
+        &::-webkit-scrollbar {
+            display: none
+        }
+    }
+}
+
+@import "./result_item";
