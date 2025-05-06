@@ -1,6 +1,8 @@
 import './App.css'
+import Footer from './Components/Footer/Footer'
 import Header from './Components/Header/Header'
 import About from './Home/About/About'
+import Connect from './Home/Connect/Connect'
 import Experience from './Home/Experience/Experience'
 import Format from './Home/Format/Format'
 import Hero from './Home/Hero/Hero'
@@ -27,7 +29,9 @@ function App() {
         <Format />
         <Modul />
         <Result />
+        <Connect />
       </main>
+      <Footer />
     </>
   )
 }
