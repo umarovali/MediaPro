@@ -10,7 +10,7 @@ export default function Header() {
                     <p className="header_text">Sakhib Akhmatov - <span>online</span> va <span>offline</span> kurslar!</p>
 
                     <a href="tel:0556271984" className="header_btn">
-                        <SlCallOut /> 0556 27 19 84
+                        <SlCallOut /> <p>0555 996 966</p>
                     </a>
                 </div>
             </div>

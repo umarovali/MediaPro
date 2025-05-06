@@ -30,22 +30,25 @@
 
     .study_title {
         padding-top: 22px;
-        color: $green;
+        color: $dark;
         font-family: $poppins;
         font-weight: 600;
-        font-size: 20px;
+        font-size: 22px;
         line-height: 25px;
+
+        span {
+            color: $green;
+        }
     }
 
     .study_suptitle {
         padding-top: 10px;
         color: $dark;
         font-family: $poppins;
-        font-weight: 600;
-        font-size: 20px;
+        font-weight: 500;
+        font-size: 18px;
         line-height: 25px;
         letter-spacing: 0px;
-
     }
 
 }

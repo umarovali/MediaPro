@@ -10,7 +10,6 @@ import Infos from './Home/Info/Info'
 import MediaBoost from './Home/MediaBoost/MediaBoost'
 import Modul from './Home/Modul/Modul'
 import Problems from './Home/Problems/Problems'
-import Result from './Home/Result/Result'
 import Study from './Home/Study/Study'
 
 function App() {
@@ -28,7 +27,6 @@ function App() {
         <Infos />
         <Format />
         <Modul />
-        <Result />
         <Connect />
       </main>
       <Footer />

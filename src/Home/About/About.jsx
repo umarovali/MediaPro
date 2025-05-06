@@ -4,6 +4,7 @@ import Elmakon from "../../assets/images/elmakon.png";
 import WB from "../../assets/images/wb.png";
 import Active from "../../assets/images/active.png";
 import AboutItem from "./AboutItem";
+import VideoSwiper from "../../Components/VideoSwiper/VideoSwiper";
 
 export default function About() {
     return (
@@ -11,6 +12,7 @@ export default function About() {
             <div className="container">
                 <Title>Sahib Ahmatov - O’zi <span>kim?</span> </Title>
                 <Suptitle>Tadbirkor - <span> Active Wildberries </span> va <span>Active Media</span> brendlari asoschisi!</Suptitle>
+                <VideoSwiper />
                 <ul className="about_content">
                     <li className="about_content_item">
                         <h3 className="about_content_item_title">
@@ -42,19 +44,19 @@ export default function About() {
                         </ul>
 
                         <ul className="about_content_item_text_two">
-                            <li>1000+ <span> Ilm olganlar</span></li>
-                            <li>3000+ <span>Bepul talim olganlar</span></li>
-                            <li>30+ <span>hodim</span></li>
+                            <li>20+ <span> FastFood rastalari</span></li>
+                            <li>25+ <span>Hodim</span></li>
+                            <li>2017-2020</li>
                         </ul>
                     </li>
                 </ul>
 
                 <ul className="about_wrapper">
-                  <AboutItem Icon={Elmakon} title={"O’zbekistondagi yirik elektronika savdo do’konlari bilan hamkorlikda!"} suptitle={"Mahsulotlarni Uzum market, Zoodmall va shu kabi marketplacelarda savdosini yo’lga qo’yishda hamkorlik qilgan!"} />
-                  <AboutItem Icon={WB} title={"Wildberries da savdo va Boshqalarni Ham savdo qilishga o’rgatib kelmoqda!"} suptitle={"2023-2025 (Davom etmoqda) 300+ o’quvchi"} description={"O’zbekistondagi yirik ishlab chiqarish fabrikalari bilan hamkorlikda, Mahsulotlarni Wildberries orqali NDH davlatlariga sotishda hamkorlik qiladi!"} />
-                  <AboutItem Icon={Active} title={"Marketplacelar bo’yicha Treninglar va Online darslar yo’lga qo’ygan!"} suptitle={"700+ Eshituvchilar soni 50 000$ + Online orqali savdo 2023-2025 (Davom etmoqda)"} description={"Qirg’iziston va O’zbekistonlik tadbirkorlarga Bizneslarini internet orqali rivojlantirishga yordam berib keladi!"} />
+                    <AboutItem Icon={Elmakon} title={"O’zbekistondagi yirik elektronika savdo do’konlari bilan hamkorlikda!"} suptitle={"Mahsulotlarni Uzum market, Zoodmall va shu kabi marketplacelarda savdosini yo’lga qo’yishda hamkorlik qilgan!"} />
+                    <AboutItem Icon={WB} title={"Wildberries da savdo va Boshqalarni Ham savdo qilishga o’rgatib kelmoqda!"} suptitle={"2023-2025 (Davom etmoqda) 300+ o’quvchi"} description={"O’zbekistondagi yirik ishlab chiqarish fabrikalari bilan hamkorlikda, Mahsulotlarni Wildberries orqali NDH davlatlariga sotishda hamkorlik qiladi!"} />
+                    <AboutItem Icon={Active} title={"Marketplacelar bo’yicha Treninglar va Online darslar yo’lga qo’ygan!"} suptitle={"700+ Eshituvchilar soni 50 000$ + Online orqali savdo 2023-2025 (Davom etmoqda)"} description={"Qirg’iziston va O’zbekistonlik tadbirkorlarga Bizneslarini internet orqali rivojlantirishga yordam berib keladi!"} />
                 </ul>
             </div>
-        </section>
-    )
-}
+        </section> 
+    )     
+} 

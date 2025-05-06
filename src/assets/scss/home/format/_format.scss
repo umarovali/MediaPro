@@ -5,12 +5,19 @@
         display: flex;
         justify-content: space-between;
         margin-top: 30px;
+        width: 100%;
+
+        .format_foto {
+            width: 50%;
+            object-fit: contain;
+        }
     }
 
     .format_list {
         display: grid;
-        grid-template-columns: repeat(2, 300px);
-        column-gap: 24px;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 24px;
+        width: 50%;
 
         .format_item:nth-child(even) {
             margin-top: 24px;
