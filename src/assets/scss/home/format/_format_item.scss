@@ -61,3 +61,28 @@
         }
     }
 }
+
+@media (max-width: 500px) {
+    .format_item {
+        .format_box {
+            width: 30px;
+            height: 30px;
+
+            img {
+                width: 18px;
+                height: 18px;
+            }
+        }
+
+        .format_title {
+            padding-top: 10px;
+            font-size: 16px;
+        }
+
+        .format_suptitle {
+            padding-top: 5px;
+            font-size: 10px;
+            line-height: 120%;
+        }
+    }
+}

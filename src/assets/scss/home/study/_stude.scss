@@ -20,6 +20,7 @@
             .study_item:nth-child(1) {
                 margin-left: 20%;
             }
+
             .study_item:nth-child(2) {
                 margin-right: 20%;
             }
@@ -34,8 +35,26 @@
             .study_item:nth-child(1) {
                 margin-left: 8%;
             }
+
             .study_item:nth-child(2) {
                 margin-right: 8%;
+            }
+        }
+    }
+}
+
+@media (max-width: 500px) {
+    .study {
+        padding-bottom: 20px;
+
+        .study_list {
+
+            .study_item:nth-child(1) {
+                margin-left: 0%;
+            }
+
+            .study_item:nth-child(2) {
+                margin-right: 0%;
             }
         }
     }

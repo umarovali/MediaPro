@@ -72,3 +72,22 @@
         
     }
 }
+
+@media (max-width: 500px) {
+    .format {
+        .format_list {
+            bottom: 60px;
+            column-gap: 16px;
+            row-gap: 12px;
+
+            .format_item:nth-child(even) {
+                margin-top: 7px;
+            }
+    
+            .format_item:nth-child(odd) {
+                margin-bottom: 7px;
+            }
+        }
+        
+    }
+}

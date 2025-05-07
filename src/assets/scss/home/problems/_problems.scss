@@ -29,3 +29,12 @@
         }
     }
 }
+
+@media (max-width: 550px) {
+    .problems {
+        padding-bottom: 30px;
+        .problems_wrapper {
+            gap: 30px;
+        }
+    }
+}

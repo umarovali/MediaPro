@@ -123,3 +123,38 @@
         }
     }
 }
+
+@media (max-width: 550px) {
+    .about {
+        .about_content {
+            .about_content_item {
+                padding: 10px 15px;
+
+                .about_content_item_title {
+                    font-size: 22px;
+                }
+
+                .doteds {
+                    top: 10px;
+                    right: 10px;
+
+                    li {
+                        max-width: 7px;
+                        max-height: 7px;
+                        min-width: 7px;
+                        min-height: 7px;
+                    }
+                }
+
+                .about_content_item_text_one,
+                .about_content_item_text_two {
+
+
+                    li {
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+    }
+}

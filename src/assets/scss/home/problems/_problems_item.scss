@@ -58,7 +58,7 @@
 
 @media (min-width: 800px) and (max-width: 870px) {
     .problems_item {
-        .problems_title{
+        .problems_title {
             font-size: 16px;
             line-height: 20px;
         }
@@ -69,6 +69,34 @@
         }
 
         .problems_description {
+            font-size: 14px;
+            line-height: 20px;
+        }
+    }
+}
+
+
+@media (max-width: 500px) {
+    .problems_item {
+        padding: 18px;
+        .problems_question {
+            width: 35px;
+            height: 35px;
+            font-size: 22px;
+        }
+        .problems_title {
+            padding-top: 10px;
+            font-size: 16px;
+            line-height: 20px;
+        }
+
+        .problems_suptitle {
+            padding-top: 2px;
+            font-size: 18px;
+        }
+
+        .problems_description {
+            padding-top: 6px;
             font-size: 14px;
             line-height: 20px;
         }

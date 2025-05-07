@@ -52,3 +52,25 @@
     }
 
 }
+
+@media (max-width: 500px) {
+    .study_item {
+        padding: 15px;
+
+        .study_question {
+            width: 35px;
+            height: 35px;
+            font-size: 20px;
+        }
+
+        .study_title {
+            padding-top: 14px;
+            font-size: 18px;
+        }
+
+        .study_suptitle {
+            padding-top: 5px;
+            font-size: 16px;
+        }
+    }
+}

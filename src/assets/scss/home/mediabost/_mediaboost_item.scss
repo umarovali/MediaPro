@@ -42,3 +42,19 @@
         }
     }
 }
+
+@media (max-width: 500px) {
+    .mediaboost_item {
+        padding: 15px;
+
+        .mediaboost_number {
+            width: 35px;
+            height: 35px;
+            font-size: 30px;
+        }
+
+        .mediaboost_suptitle {
+            font-size: 17px;
+        }
+    }
+}

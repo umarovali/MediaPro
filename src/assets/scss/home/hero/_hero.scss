@@ -138,3 +138,31 @@
         }
     }
 }
+
+@media (max-width: 600px) {
+    .hero {
+        height: 1060px;
+        padding-top: 85px;
+
+        .hero_content {
+            z-index: 100;
+        }
+    }
+    
+}
+
+@media (max-width: 500px) {
+    .hero {
+        height: 950px;
+
+        
+
+        .hero_title {
+            font-size: 32px;
+        }
+
+        .hero_suptitle {
+            font-size: 18px;
+        }
+    }
+}

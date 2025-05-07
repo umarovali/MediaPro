@@ -69,3 +69,18 @@
         display: none;
     }
 }
+
+@media (max-width: 600px) {
+    .header {
+        height: 65px;
+        .header_logo {
+            font-size: 16px;
+        }
+
+        .header_btn {
+            padding: 10px 14px;
+            font-size: 15px;
+            border-radius: 5px;
+        }
+    }
+}

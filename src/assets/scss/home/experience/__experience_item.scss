@@ -38,3 +38,14 @@
 
 }
 
+@media (max-width: 500px) {
+    .experience_item {
+        .experience_title {
+            font-size: 36px;
+        }
+
+        .experience_suptitle {
+            font-size: 16px;
+        }
+    }
+}

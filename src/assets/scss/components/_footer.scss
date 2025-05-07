@@ -62,7 +62,28 @@
         }
 
         .footer_title {
-            line-height: 150%;
+            line-height: 100%;
         }
     }
+}
+
+@media (max-width: 500px) {
+    .footer {
+        .footer_title {
+            font-size: 14px;
+        }
+
+        .footer_name {
+            font-size: 17px;
+        }
+
+        .footer_line {
+            margin: 20px 0px;
+        }
+
+        .footer_author {
+            font-size: 12px;
+        }
+    }
+
 }
