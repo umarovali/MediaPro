@@ -50,7 +50,7 @@ export default function VideoSwiper() {
           0: {
             slidesPerView: 1,
           },
-          450: {
+          460: {
             slidesPerView: 2,
           },
           800: {

@@ -148,21 +148,54 @@
             z-index: 100;
         }
     }
-    
+
 }
 
 @media (max-width: 500px) {
     .hero {
-        height: 950px;
-
-        
+        height: 850px;
 
         .hero_title {
             font-size: 32px;
+            line-height: 110%;
         }
 
         .hero_suptitle {
+            padding-top: 10px;
             font-size: 18px;
+        }
+
+        .hero_btn {
+            margin-top: 15px;
+            width: 160px;
+            font-size: 15px;
+            height: 30px;
+        }
+
+        img {
+            height: 500px;
+        }
+    }
+}
+
+@media (max-width: 400px) {
+    .hero {
+        height: 800px;
+
+        .hero_title {
+            font-size: 30px;
+            line-height: 110%;
+        }
+
+        .hero_suptitle {
+            padding-top: 10px;
+            font-size: 16px;
+        }
+
+      
+
+        img {
+            height: 400px;
         }
     }
 }

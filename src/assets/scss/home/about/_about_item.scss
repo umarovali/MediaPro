@@ -62,3 +62,30 @@
         }
     }
 }
+
+@media (max-width: 400px) {
+    .about_item {
+        padding: 12px;
+
+        img {
+            width: 50px;
+            height: 50px;
+        }
+
+        .about_item_title {
+            font-size: 16px;
+            line-height: 150%;
+        }
+
+        .about_item_suptitle {
+            font-size: 16px;
+            padding-top: 10px;
+            line-height: 120%;
+        }
+
+        .about_item_description {
+            font-size: 13px;
+            line-height: 150%;
+        }
+    }
+}

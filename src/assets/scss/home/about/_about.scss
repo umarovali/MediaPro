@@ -127,6 +127,8 @@
 @media (max-width: 550px) {
     .about {
         .about_content {
+            gap: 30px;
+
             .about_content_item {
                 padding: 10px 15px;
 
@@ -135,15 +137,7 @@
                 }
 
                 .doteds {
-                    top: 10px;
-                    right: 10px;
-
-                    li {
-                        max-width: 7px;
-                        max-height: 7px;
-                        min-width: 7px;
-                        min-height: 7px;
-                    }
+                    display: none;
                 }
 
                 .about_content_item_text_one,
@@ -152,6 +146,34 @@
 
                     li {
                         font-size: 16px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 400px) {
+    .about {
+        .about_content {
+            .about_content_item {
+                .about_content_item_title {
+                    font-size: 18px;
+                    width: 100%;
+                }
+
+                .about_content_item_text_one {
+                    margin-top: 15px;
+                }
+
+                .about_content_item_text_two {
+                    margin-top: 30px;
+                }
+
+                .about_content_item_text_one,
+                .about_content_item_text_two {
+                    li {
+                        font-size: 13px;
                     }
                 }
             }

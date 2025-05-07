@@ -61,6 +61,7 @@
     .format {
         .format_wrapper {
             height: auto;
+
             .format_foto {
                 width: 100%;
             }
@@ -69,7 +70,7 @@
         .format_list {
             bottom: 60px;
         }
-        
+
     }
 }
 
@@ -83,11 +84,23 @@
             .format_item:nth-child(even) {
                 margin-top: 7px;
             }
-    
+
             .format_item:nth-child(odd) {
                 margin-bottom: 7px;
             }
         }
-        
+
+    }
+}
+
+@media (max-width: 350px) {
+    .format {
+        .format_list {
+            display: flex;
+            flex-direction: column;
+            bottom: 60px;
+            column-gap: 16px;
+            row-gap: 12px;
+        }
     }
 }
