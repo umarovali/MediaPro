@@ -11,7 +11,7 @@ export default function Footer() {
 
                 <div className="footer_line"></div>
 
-                <a href="" className="footer_author">© 2025 Website developed by NWV team | All rights reserved</a>
+                <a href="tel:0505 00 44 11" className="footer_author">© 2025 Website developed by NWV team | All rights reserved</a>
             </div>
         </footer>
     )

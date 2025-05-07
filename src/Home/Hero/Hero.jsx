@@ -12,7 +12,11 @@ export default function Hero() {
                         <p className='hero_suptitle'>
                             Biznesini brend darajasiga olib chiqmoqchi va savdosini media orqali x10 baravarga oshirmoqchi bo’lgan Biznesmenlar, Kasb egalari va mutahasislar uchun mahsus kurs!
                         </p>
-                        <button className='hero_btn'>Royhatdan otish!</button>
+                        <button className='hero_btn' onClick={() => {
+                            document.getElementById("connect").scrollIntoView({ behavior: "smooth" });
+                        }}>
+                            Royhatdan otish!
+                        </button>
                     </div>
 
                     <img src={Foto} alt="" />
