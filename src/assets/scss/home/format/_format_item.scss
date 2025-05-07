@@ -36,3 +36,28 @@
         line-height: 24px;
     }
 }
+
+@media (max-width: 750px) {
+    .format_item {
+        padding: 12px;
+
+        .format_box {
+            width: 40px;
+            height: 40px;
+
+            img {
+                width: 30px;
+                height: 30px;
+                object-fit: contain;
+            }
+        }
+
+        .format_title {
+            font-size: 18px;
+        }
+
+        .format_suptitle {
+            font-size: 14px;
+        }
+    }
+}

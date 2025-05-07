@@ -1,3 +1,4 @@
+import { TbSend2 } from "react-icons/tb";
 
 export default function Connect() {
     return (
@@ -19,7 +20,7 @@ export default function Connect() {
                             <input type="text" id="num" />
                         </div>
 
-                        <button className="connect_btns">Royhatdan otish!</button>
+                        <button className="connect_btns">Royhatdan otish! <TbSend2 /></button>
                     </form>
                 </div>
             </div>

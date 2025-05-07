@@ -101,3 +101,40 @@
         }
     }
 }
+
+
+
+@media (max-width: 750px) {
+    .hero {
+        position: relative;
+        height: 1200px;
+        display: flex;
+        align-items: start;
+
+        .hero_content {
+            width: 100%;
+            align-items: start;
+        }
+
+        .hero_title,
+        .hero_suptitle {
+            text-align: start;
+        }
+
+        .hero_btn {
+            width: 180px;
+            font-size: 16px;
+            height: 40px;
+        }
+
+        img {
+            width: 100%;
+            margin-left: 0px;
+            object-fit: contain;
+            object-position: center bottom;
+            position: absolute;
+            bottom: 0px;
+            left: 30px;
+        }
+    }
+}

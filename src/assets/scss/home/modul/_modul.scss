@@ -17,3 +17,11 @@
         }
     }
 }
+
+@media (max-width: 800px) {
+    .modul {
+        .modul_wrapper {
+            grid-template-columns: repeat(1,1fr);
+        }
+    }
+}

@@ -1,7 +1,31 @@
+import { useEffect, useState } from "react";
 import Title from "../../ui/Title";
 import ModulItem from "./ModulItem";
+import ViewAll from "../../ui/ViewAll";
 
 export default function Modul() {
+    const [viewAll, setViewAll] = useState(true);
+
+    useEffect(() => {
+        const handleResize = () => {
+            if (window.innerWidth < 800) {
+                setViewAll(false);
+            } else {
+                setViewAll(true);
+            }
+        };
+
+        handleResize();
+
+        window.addEventListener("resize", handleResize);
+
+        return () => window.removeEventListener("resize", handleResize);
+    }, []);
+
+    const handleViewBlock = () => {
+        setViewAll(prev => !prev);
+    };
+
     return (
         <section className="modul">
             <div className="container">
@@ -20,37 +44,42 @@ export default function Modul() {
                         suptitle1={<>O‘z mijozingni topish uchun “Tez <span>Avatar</span> Metodi”</>}
                         suptitle2={<>Ishonchli va kerakli <span>mijozlarni</span> jalb qilish</>}
                     />
-                    <ModulItem
-                        num={3}
-                        title={<>Tez natija beradigan <span>kontent</span> rejasi!</>}
-                        suptitle1={<><span>4 kunlik</span> kontent yo‘li: Qanday qilib 1 haftada mijoz chiqara oladi? </>}
-                        suptitle2={<>Reels + Story + 1 ta post = <span>Mikrovoronka</span></>}
-                    />
-                    <ModulItem
-                        num={4}
-                        title={<><span>Kamera</span> oldida o‘zingni sot!</>}
-                        suptitle1={<>O‘zingni <span>ekspert</span> sifatida ko‘rsatish: tana, ovoz, ko‘z aloqa.</>}
-                        suptitle2={<><span>3 ta </span>ishonch uyg‘otuvchi ssenariy.</>}
-                    />
-                    <ModulItem
-                        num={5}
-                        title={<><span>Instagram</span>’dagi pulli postlar sirasi!</>}
-                        suptitle1={<>Reels bilan trafik olish, <span>CTA</span> bilan ishlash: nima deyish kerak?</>}
-                        suptitle2={<>“<span>Sotuvchi post</span>” formulasini yozish</>}
-                    />
-                    <ModulItem
-                        num={6}
-                        title={<>Profilni <span>million dollarlik</span> qadoqlash!</>}
-                        suptitle1={<><span>Profil bio</span>, vizual ko‘rinish, Highlights — 1 kunda tartibga keltirish.</>}
-                        suptitle2={<>Profilingda “<span>ishonch signal</span>”lari!</>}
-                    />
-                    <ModulItem
-                        num={7}
-                        title={<>Savdoga chiqarish <span>strategiyasi</span>!</>}
-                        suptitle1={<><span>Mini launch</span>: 5 kunlik kontent orqali kurs yoki mahsulot sotish.</>}
-                        suptitle2={<>Savdodan oldingi “<span>issiq postlar</span>” tayyorlash.</>}
-                    />
+                    {viewAll && <>
+                        <ModulItem
+                            num={3}
+                            title={<>Tez natija beradigan <span>kontent</span> rejasi!</>}
+                            suptitle1={<><span>4 kunlik</span> kontent yo‘li: Qanday qilib 1 haftada mijoz chiqara oladi? </>}
+                            suptitle2={<>Reels + Story + 1 ta post = <span>Mikrovoronka</span></>}
+                        />
+                        <ModulItem
+                            num={4}
+                            title={<><span>Kamera</span> oldida o‘zingni sot!</>}
+                            suptitle1={<>O‘zingni <span>ekspert</span> sifatida ko‘rsatish: tana, ovoz, ko‘z aloqa.</>}
+                            suptitle2={<><span>3 ta </span>ishonch uyg‘otuvchi ssenariy.</>}
+                        />
+                        <ModulItem
+                            num={5}
+                            title={<><span>Instagram</span>’dagi pulli postlar sirasi!</>}
+                            suptitle1={<>Reels bilan trafik olish, <span>CTA</span> bilan ishlash: nima deyish kerak?</>}
+                            suptitle2={<>“<span>Sotuvchi post</span>” formulasini yozish</>}
+                        />
+                        <ModulItem
+                            num={6}
+                            title={<>Profilni <span>million dollarlik</span> qadoqlash!</>}
+                            suptitle1={<><span>Profil bio</span>, vizual ko‘rinish, Highlights — 1 kunda tartibga keltirish.</>}
+                            suptitle2={<>Profilingda “<span>ishonch signal</span>”lari!</>}
+                        />
+                        <ModulItem
+                            num={7}
+                            title={<>Savdoga chiqarish <span>strategiyasi</span>!</>}
+                            suptitle1={<><span>Mini launch</span>: 5 kunlik kontent orqali kurs yoki mahsulot sotish.</>}
+                            suptitle2={<>Savdodan oldingi “<span>issiq postlar</span>” tayyorlash.</>}
+                        />
+                    </>}
                 </ul>
+
+                <ViewAll onClick={handleViewBlock} />
+
             </div>
         </section>
     )

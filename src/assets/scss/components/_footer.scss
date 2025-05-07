@@ -25,6 +25,7 @@
         font-weight: 700;
         font-size: 20px;
         line-height: 100%;
+        white-space: nowrap;
 
         span {
             color: $green;
@@ -45,5 +46,23 @@
         font-size: 16px;
         line-height: 100%;
         color: #0A142F;
+    }
+}
+
+
+@media (max-width: 800px) {
+    .footer {
+        padding-bottom: 30px;
+
+        .footer_content {
+            display: flex;
+            justify-content: space-between;
+            gap: 50px;
+            align-items: start;
+        }
+
+        .footer_title {
+            line-height: 150%;
+        }
     }
 }

@@ -23,23 +23,69 @@
 @import "./_experience_item";
 
 
-@media (max-width: 1000px)  {
+@media (max-width: 1000px) {
     .experience {
         height: 400px;
+
         .experience_bg {
             height: auto;
             padding: 30px 0px;
         }
+
         .experience_list {
             display: flex;
             align-items: center;
             justify-content: center;
             gap: 50px;
             flex-wrap: wrap;
-    
+
             li {
                 width: 300px;
                 text-align: center;
+            }
+        }
+    }
+}
+
+
+@media (max-width: 800px) {
+    .experience {
+        .experience_list {
+            display: flex;
+            gap: 20px;
+        }
+    }
+}
+
+@media (max-width: 750px) {
+    .experience {
+        height: 550px;
+
+        .experience_bg {
+            padding: 40px 0px;
+        }
+
+        .experience_list {
+            display: flex;
+            flex-direction: column;
+            gap: 50px;
+
+            li {
+                width: 80%;
+            }
+        }
+    }
+}
+
+@media (max-width: 700px) {
+    .experience {
+        .experience_list {
+            display: flex;
+            align-items: start;
+
+            li {
+                text-align: start;
+                width: 100%;
             }
         }
     }

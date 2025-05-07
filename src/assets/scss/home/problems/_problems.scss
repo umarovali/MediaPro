@@ -19,3 +19,13 @@
         }
     }
 }
+
+
+
+@media (max-width: 800px) {
+    .problems {
+        .problems_wrapper {
+            grid-template-columns: 1fr;
+        }
+    }
+}

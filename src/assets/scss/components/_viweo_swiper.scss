@@ -84,3 +84,14 @@
         }
     }
 }
+
+@media (max-width: 650px) {
+    .swiper {
+        .swiper-slide {
+            video {
+                height: auto;
+                aspect-ratio: 1 / 1.5;
+            }
+        }
+    }
+}
