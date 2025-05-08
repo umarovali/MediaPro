@@ -1,4 +1,5 @@
 import Foto from "../../assets/images/hero_foto.png";
+import fotoZamena from '../../assets/images/hero_foto_copy.png'
 
 export default function Hero() {
     return (
@@ -18,8 +19,10 @@ export default function Hero() {
                             Royhatdan otish!
                         </button>
                     </div>
-
-                    <img src={Foto} alt="" />
+                    <picture>
+                        <source srcset={fotoZamena} media="(max-width: 750px)" />
+                        <img src={Foto} alt="" />
+                    </picture>
                 </div>
             </div>
         </section>
