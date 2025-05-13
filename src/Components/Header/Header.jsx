@@ -9,8 +9,8 @@ export default function Header() {
 
                     <p className="header_text">Sakhib Akhmatov - <span>online</span> va <span>offline</span> kurslar!</p>
 
-                    <a href="tel:0555 996 966" className="header_btn">
-                        <SlCallOut /> <p>0555 996 966</p>
+                    <a href="tel:0880 77 80 77" className="header_btn">
+                        <SlCallOut /> <p>+996 880 77 80 77</p>
                     </a>
                 </div>
             </div>

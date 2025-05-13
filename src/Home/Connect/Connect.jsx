@@ -24,21 +24,37 @@ export default function Connect() {
         setPhone(formatted);
     };
 
-    const handleClick = () => {
-        const rawDigits = phone.replace(/\D/g, "");
-        if (!name.trim() || rawDigits.length !== 12) {
-            toast.error("Iltimos ma'lumotlarni kiriting!");
-            return;
-        }
+  const handleClick = () => {
+    const rawDigits = phone.replace(/\D/g, "");
+    if (!name.trim() || rawDigits.length !== 12) {
+        toast.error("Iltimos ma'lumotlarni kiriting!");
+        return;
+    }
 
-        const message = `Ism: ${name} va ${phone}`;
-        const encodedMessage = encodeURIComponent(message);
+    const message = `📨 Yangi so'rov:\n👤 Ism: ${name}\n📞 Telefon: ${phone}`;
+    const token = "7832749316:AAHMr7eerAvxn30E4qXoQhA0CokZkOwRk3U";
+    const chatId = "ВАШ_CHAT_ID"; // этот ID нужно получить (см. ниже)
+    const url = `https://api.telegram.org/bot${token}/sendMessage`;
 
-        const phoneNumber = "996555996966";
-        const url = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
-
-        window.open(url, "_blank");
+    const payload = {
+        chat_id: 5369970706,
+        text: message,
     };
+
+    fetch(url, {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json",
+        },
+        body: JSON.stringify(payload),
+    })
+        .then((res) => {
+            if (!res.ok) throw new Error("Telegramga yuborilmadi");
+            toast.success("Ma'lumot yuborildi!");
+        })
+        .catch(() => toast.error("Xatolik yuz berdi"));
+};
+
 
     return (
         <section className="connect" id="connect">

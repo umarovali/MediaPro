@@ -1,5 +1,5 @@
 
-export default function ModulItem({ num, title, suptitle1, suptitle2 }) {
+export default function ModulItem({ num, title, suptitle1, suptitle2, suptitle3 }) {
     return (
         <li className='modul_item'>
             <div className='modul_number'>{num}</div>
@@ -12,6 +12,7 @@ export default function ModulItem({ num, title, suptitle1, suptitle2 }) {
             <h5 className='modul_title'>{title}</h5>
             <p className='modul_suptitle'>{suptitle1}</p>
             <p className='modul_suptitle'>{suptitle2}</p>
+            <p className='modul_suptitle'>{suptitle3}</p>
         </li>
     )
 }

@@ -2,6 +2,7 @@ import './App.css'
 import Footer from './Components/Footer/Footer'
 import Header from './Components/Header/Header'
 import About from './Home/About/About'
+import Bonus from './Home/Bonus/Bonus'
 import Connect from './Home/Connect/Connect'
 import Experience from './Home/Experience/Experience'
 import Format from './Home/Format/Format'
@@ -27,6 +28,7 @@ function App() {
         <Infos />
         <Format />
         <Modul />
+        <Bonus />
         <Connect />
       </main>
       <Footer />

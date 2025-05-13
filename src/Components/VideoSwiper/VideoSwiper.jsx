@@ -12,7 +12,7 @@ import Video4 from "../../assets/videos/video_4.MOV";
 
 export default function VideoSwiper() {
     const videoRefs = useRef([]);
-    const [playingIndex, setPlayingIndex] = useState(null); // Текущий активный
+    const [playingIndex, setPlayingIndex] = useState(null);
 
     const videos = [Video1, Video2, Video3, Video4];
 
@@ -40,28 +40,28 @@ export default function VideoSwiper() {
 
     return (
         <Swiper
-        slidesPerView={4}
-        spaceBetween={30}
-        loop={true}
-        pagination={{ clickable: true }}
-        modules={[Pagination]}
-        className="mySwiper"
-        breakpoints={{
-          0: {
-            slidesPerView: 1,
-          },
-          460: {
-            slidesPerView: 2,
-          },
-          800: {
-            slidesPerView: 3,
-          },
-          1150: {
-            slidesPerView: 4,
-          },
-        }}
-      >
-      
+            slidesPerView={4}
+            spaceBetween={30}
+            loop={true}
+            pagination={{ clickable: true }}
+            modules={[Pagination]}
+            className="mySwiper"
+            breakpoints={{
+                0: {
+                    slidesPerView: 1,
+                },
+                460: {
+                    slidesPerView: 2,
+                },
+                800: {
+                    slidesPerView: 3,
+                },
+                1150: {
+                    slidesPerView: 4,
+                },
+            }}
+        >
+
             {videos.map((videoUrl, index) => (
                 <SwiperSlide key={index} style={{ position: "relative" }}>
                     <div className='video_block'>
@@ -70,8 +70,7 @@ export default function VideoSwiper() {
                             src={videoUrl}
                             muted
                             playsInline
-                            style={{
-                            }}
+                            preload="metadata"
                             onClick={() => handleVideoClick(index)}
                         />
                         {playingIndex !== index && (
