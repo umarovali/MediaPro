@@ -1,4 +1,4 @@
-import FormatFoto from "../../assets/images/format_foto.png";
+import FormatFoto from "../../assets/images/foto_format.png";
 import Suptitle from "../../ui/Suptitle";
 import Title from "../../ui/Title";
 import Icon1 from "../../assets/images/format_icons/format_icon_1.svg";
