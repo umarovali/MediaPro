@@ -7,7 +7,7 @@ import { BsFillPlayFill } from "react-icons/bs";
 
 import Video1 from "../../assets/videos/video_1.MOV";
 import Video2 from "../../assets/videos/video_2.mp4";
-import Video3 from "../../assets/videos/video_3.MOV";
+import Video3 from "../../assets/videos/video_3.mp4";
 import Video4 from "../../assets/videos/video_4.MOV";
 
 export default function VideoSwiper() {
