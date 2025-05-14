@@ -34,7 +34,7 @@ export default function About() {
                     </li>
                     <li className="about_content_item">
                         <h3 className="about_content_item_title">
-                            <span>FastFood</span> restoranlar
+                            <span>FastFood</span> rastalari
                         </h3>
 
                         <ul className="doteds">

@@ -37,7 +37,7 @@ export default function Modul() {
                         title={<>Instagram’da <span>pul</span> ishlashning soddalashgan yo‘li</>}
                         suptitle1={<>Nega aynan <span>Instagram</span> — marketing uchun eng zo‘r Instrument?</>}
                         suptitle2={<>3 qadamli savdo modeli: <span>kontent → ishonch → sotuv</span> (daromad)</>}
-                        suptitle3={<>Yuzni ko’rsatmasdan <span>Halol</span> Blog yuritish</>}
+                        suptitle3={<>Yuzni ko’rsatmasdan <span className="text_weight">Halol Blog yuritish</span></>}
                     />
                     <ModulItem
                         num={2}

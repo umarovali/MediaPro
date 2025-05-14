@@ -81,6 +81,13 @@
         span {
             color: $green;
         }
+
+        .text_weight {
+            text-transform: uppercase;
+            color: #020202e1;
+            font-weight: 600;
+            font-style: italic;
+        }
     }
 }
 
