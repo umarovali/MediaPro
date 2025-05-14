@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react';
+import { useRef, useState, useEffect } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination';
@@ -15,6 +15,22 @@ export default function VideoSwiper() {
     const [playingIndex, setPlayingIndex] = useState(null);
 
     const videos = [Video1, Video2, Video3, Video4];
+
+    useEffect(() => {
+        videoRefs.current.forEach((video, index) => {
+            if (!video) return;
+
+            video.muted = true;
+            video.play().then(() => {
+                setTimeout(() => {
+                    video.pause();
+                    video.currentTime = 0;
+                }, 1000);
+            }).catch(() => {
+                video.pause();
+            });
+        });
+    }, []);
 
     const handleVideoClick = (index) => {
         videoRefs.current.forEach((video, i) => {
@@ -61,7 +77,6 @@ export default function VideoSwiper() {
                 },
             }}
         >
-
             {videos.map((videoUrl, index) => (
                 <SwiperSlide key={index} style={{ position: "relative" }}>
                     <div className='video_block'>
