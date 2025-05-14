@@ -32,12 +32,11 @@ export default function Connect() {
     }
 
     const message = `📨 Yangi so'rov:\n👤 Ism: ${name}\n📞 Telefon: ${phone}`;
-    const token = "7832749316:AAHMr7eerAvxn30E4qXoQhA0CokZkOwRk3U";
-    const chatId = "ВАШ_CHAT_ID"; // этот ID нужно получить (см. ниже)
+    const token = "7534242774:AAFQe9sggAiAnA_sOOaqTEcxL5bFsplNtgU";
     const url = `https://api.telegram.org/bot${token}/sendMessage`;
 
     const payload = {
-        chat_id: 5369970706,
+        chat_id: 6207555178,
         text: message,
     };
 
